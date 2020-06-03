@@ -12,5 +12,5 @@ console.log(
 		' ' +
 		lihemen.lastname.toUpperCase()}, with HNG ID ${
 		lihemen.id
-	}, using ${lihemen.stack.toUpperCase()} for stage 2 task`
+	}, and email ${lihemen.email}, using ${lihemen.stack.toUpperCase()} for stage 2 task`
 );
