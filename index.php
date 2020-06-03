@@ -39,23 +39,26 @@
             $result->language = $matches[3];
 
             // store passed in property
-            $result->passed = true;
-            $result->script = $output;
+            $result->status = "Pass";
+            $result->output = $output;
+            $result->file = $filename;
 
             $passCount += 1;
           }
           else {
           // else
             // store fail for result property   
-            $result->passed = false;
-            $result->script = $output;
+            $result->status = "Fail";
+            $result->output = $output;
+            $result->file = $filename;
             $failCount += 1;
           }
       }
       else {
         // store fail for result property in object variable
-        $result->passed = false;
-        $result->script = "Invalid script found - $filename";
+        $result->status = "Fail";
+        $result->output = "Invalid script found";
+        $result->file = $filename;
         $failCount +=1;
       }
 
@@ -65,7 +68,7 @@
 
     if ($toJson) {
       // return json
-      $totalResults = json_encode($totalResults, JSON_PRETTY_PRINT);
+      $totalResults = json_encode($totalResults);
     }
 
     $summary->totalResults = $totalResults;
@@ -76,6 +79,6 @@
     return $summary;
   }
 
-  print_r(parse_scripts());
+  print_r(parse_scripts()); // temporary will be removed
   
 ?>
