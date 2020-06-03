@@ -57,7 +57,7 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
-                                <td><?= $result->output ?></td>
+                                <td><?= $result->html_output ?></td>
                                 <td>
                                     <?php if ($result->status == "pass"):?>
                                         <i class="fas fa-check"></i>
