@@ -43,7 +43,7 @@
 
             // store passed in property
             $result->status = "pass";
-            $result->output = $output;
+            $result->output = preg_replace('/ and email [_a-z0-9-]+[\.[_a-z0-9-]+]*@[a-z0-9-]+[\.[a-z0-9-]+]*.[a-z]{2,3}/', '', $output);
             $result->file = $filename;
 
             $passCount += 1;
