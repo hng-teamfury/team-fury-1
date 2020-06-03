@@ -10,7 +10,7 @@ let lihemen = {
 console.log(
 	`Hello World, this is ${lihemen.firstname.toUpperCase() +
 		' ' +
-		lihemen.lastname.toUpperCase()}, with HNG ID: \'${
+		lihemen.lastname.toUpperCase()}, with HNG ID ${
 		lihemen.id
-	}\', using ${lihemen.stack.toUpperCase()}, for stage 2`
+	}, using ${lihemen.stack.toUpperCase()} for stage 2 task`
 );
