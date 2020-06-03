@@ -8,7 +8,7 @@
       'php' => 'php'
     ];
     
-    $regex = '/Hello World, this is ([\w\s]+) with HNGi7 ID HNG-(\d{5}) using (\w+) for stage 2 task/i';
+    $regex = '/Hello World, this is ([a-zA-Z\s]+) with HNGi7 ID (HNG-\d{5}) using ([\w\s]+) for stage 2 task/i';
     $totalResults = [];
     $passCount = 0;
     $failCount = 0;
