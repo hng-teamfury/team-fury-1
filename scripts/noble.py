@@ -8,4 +8,4 @@ statement = f'Hello World, this is {full_name} with HNGi7 ID {id} using {languag
 def print_statement(statement):
     return statement
 
-print_statement(statement)
+print(print_statement(statement))
