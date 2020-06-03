@@ -16,7 +16,7 @@
       
     foreach (glob("scripts/*.{js,py,php}", GLOB_BRACE) as $filename) {
       $fileExt = pathinfo($filename, PATHINFO_EXTENSION);
-      echo "$fileExt , $filename \n";
+      // echo "$fileExt , $filename \n";
       
       $result = new stdClass();
 
@@ -66,29 +66,32 @@
       $totalCount += 1;
     }
 
-    if ($toJson) {
-      // return json
-      if($prettify){
-        $totalResults = json_encode($totalResults, JSON_PRETTY_PRINT);
-      }
-      else {
-        $totalResults = json_encode($totalResults);
-      }
-      
-    }
-
+    $summary = new stdClass();
     $summary->totalResults = $totalResults;
     $summary->passCount = $passCount;
     $summary->failCount = $failCount;
     $summary->totalCount = $totalCount;
 
+    if ($toJson) {
+      // return json
+      if($prettify){
+        $summary = json_encode($summary, JSON_PRETTY_PRINT);
+      }
+      else {
+        $summary = json_encode($summary);
+      }
+      
+    }
+
+    
+
     return $summary;
   }
   
 ?>
-<?php if ($GET["json"]): ?>
+<?php if (isset($_GET["json"])): ?>
   <?php 
-    echo(parse_scripts(true, true)); // prettify for now
+    print_r(parse_scripts(true, true)); // prettify for now
   ?>
   
 
@@ -117,7 +120,7 @@
         <div class="col-sm-12 col-md-8">
             main content goes here        
           <div>
-            <?php echo parse_scripts(); ?>
+            <?php print_r(parse_scripts()); ?>
           </div>  
         </div>
       <!-- End Main content -->
