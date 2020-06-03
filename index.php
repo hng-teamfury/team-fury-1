@@ -58,7 +58,7 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
-                                <td> is there an email ?</td>
+                                <td><?= $result->email ?></td>
                                 <td><?= $result->output ?></td>
                                 <td>
                                     <?php if ($result->status == "pass"):?>
