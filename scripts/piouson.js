@@ -1,0 +1,1 @@
+console.log("Hello World, this is Piouson with HNGi7 ID HNG-05828 using Javascript for stage 2 task");
