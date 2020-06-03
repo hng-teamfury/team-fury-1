@@ -1,11 +1,13 @@
-let details = {
-    fullname: 'Yusuf Emmanuel',
-    id: 'HNG-02399',
-    language: 'javascript'
+
+function speach(){
+    let details = {
+        fullname: 'Yusuf Emmanuel',
+        id: 'HNG-02399',
+        language: 'javascript',
+        email: 'emaz4me@gmail.com'
+    }
+    JSON.stringify(details)
+    return console.log(`Hello World, this is ${details.fullname} with HNGi7 ID ${details.id} using ${details.language} for stage two task`)
 }
 
-function speach(name, id, language){
-    return console.log(`Hello World, this is ${name} with HNGi7 ID ${id} using ${language} for stage two task`)
-}
-
-speach(details.fullname, details.id, details.language)
+speach()
