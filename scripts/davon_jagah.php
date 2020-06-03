@@ -5,5 +5,18 @@
   	return $introduction;
   }
 
-  echo introduce("Kazeem David", "HNG-00957", "Php");
+  $file="davon_jagah.php";
+  $fullname="Kazeem David";
+  $id="HNG-00957";
+  $language="PHP";
+  $email="davonkaze1@gmail.com";
+  
+
+  if(isset($_GET['json']))
+  {
+  	echo json_encode(["file"=>$file, "fullname"=>$fullname , "id"=>$id , "language"=>$language, "email"=>$email]);
+  }
+  else{
+  	echo introduce($fullname, $id, $language);
+  }
 ?>
