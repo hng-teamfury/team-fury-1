@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 def myscript():
     name = 'Sorinola Michael'
-    ID = 'HNGi7 02213'
+    ID = 'HNG-02213'
     language = 'python'
-    print(f'Hello World, this is {name} with id {ID} using {language} for stage 2 task.')
+    print(f'Hello World, this is {name} with HNGi7 ID {ID} using {language} for stage 2 task.')
 
 
-# In[6]:
+# In[2]:
 
 
 myscript()
