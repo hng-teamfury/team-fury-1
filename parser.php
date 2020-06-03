@@ -52,6 +52,9 @@
             $result->output = $output;
             $result->file = $filename;
             $failCount += 1;
+            $result->fullname = "undefined";            
+            $result->id = "undefined";    
+            $result->language = "undefined";
           }
       }
       else {
@@ -60,6 +63,9 @@
         $result->output = "Invalid script found";
         $result->file = $filename;
         $failCount +=1;
+        $result->fullname = "undefined";            
+        $result->id = "undefined";    
+        $result->language = "undefined";
       }
 
       $totalResults[] = $result;   
