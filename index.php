@@ -57,7 +57,7 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
-                                <td><?= $result->html_output ?></td>
+                                <td><?= preg_replace('/ and email [_a-z0-9-]+[\.[_a-z0-9-]+]*@[a-z0-9-]+[\.[a-z0-9-]+]*.[a-z]{2,3}/', '', $result->output); ?></td>
                                 <td>
                                     <?php if ($result->status == "pass"):?>
                                         <i class="fas fa-check"></i>
