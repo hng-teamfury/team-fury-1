@@ -39,7 +39,7 @@
             $result->language = $matches[3];
 
             // store passed in property
-            $result->status = "Pass";
+            $result->status = "pass";
             $result->output = $output;
             $result->file = $filename;
 
@@ -48,7 +48,7 @@
           else {
           // else
             // store fail for result property   
-            $result->status = "Fail";
+            $result->status = "fail";
             $result->output = $output;
             $result->file = $filename;
             $failCount += 1;
@@ -59,7 +59,7 @@
       }
       else {
         // store fail for result property in object variable
-        $result->status = "Fail";
+        $result->status = "fail";
         $result->output = "Invalid script found";
         $result->file = $filename;
         $failCount +=1;
