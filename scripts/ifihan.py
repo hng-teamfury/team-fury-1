@@ -3,6 +3,6 @@ id = 'HNG-04984'
 language = 'Python'
 
 def user():
-	print (f'Hello World! My name is {name} with HNGi7 ID: {id} and this script is written in {language}')
+	print (f'Hello World, this is {name} with HNGi7 ID {id} using {language} for stage 2 task')
 
 user()
