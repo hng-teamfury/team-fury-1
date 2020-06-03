@@ -44,7 +44,6 @@
                             <td>FULL NAME</td>
                             <td>HNG_ID</td>
                             <td>LANGUAGE</td>
-                            <td>EMAIL</td>
                             <td>MESSAGE</td>
                             <td>STATUS</td>
                         </thead>
@@ -58,7 +57,6 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
-                                <td><?= $result->email ?></td>
                                 <td><?= $result->output ?></td>
                                 <td>
                                     <?php if ($result->status == "pass"):?>
