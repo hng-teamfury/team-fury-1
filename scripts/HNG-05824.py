@@ -13,4 +13,3 @@ print ('Hello World, this is', load_details['name'],
             'with HNGi7 ID', load_details['id'],
             'using', load_details['language'],
             'for stage 2 task')
-# Hello World, this is [full name] with HNGi7 ID [ID] using [language] for stage 2 task
