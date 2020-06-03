@@ -1,5 +1,5 @@
 <?php
-  function parse_scripts($toJson = false) {
+  function parse_scripts($toJson = false, $prettify = false) {
     // scan directory for files matching pattern(s)
     // store filename in object variable
     $cli = [
@@ -68,7 +68,13 @@
 
     if ($toJson) {
       // return json
-      $totalResults = json_encode($totalResults);
+      if($prettify){
+        $totalResults = json_encode($totalResults, JSON_PRETTY_PRINT);
+      }
+      else {
+        $totalResults = json_encode($totalResults);
+      }
+      
     }
 
     $summary->totalResults = $totalResults;
@@ -78,7 +84,45 @@
 
     return $summary;
   }
-
-  print_r(parse_scripts()); // temporary will be removed
   
 ?>
+<?php if ($GET["json"]): ?>
+  <?php 
+    echo(parse_scripts(true, true)); // prettify for now
+  ?>
+  
+
+<?php else : ?>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HNG Task 1 - Scripts Parser</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Non-scrolling sidebar -->
+        <div class="col-sm-12 col-md-8">
+          Sidebar goes here
+        </div>
+      <!-- End Non-scrolling sidebar -->
+        
+      <!-- Main content -->
+        <div class="col-sm-12 col-md-8">
+            main content goes here        
+          <div>
+            <?php echo parse_scripts(); ?>
+          </div>  
+        </div>
+      <!-- End Main content -->
+    </div>      
+  </body>
+</html>
+
+<?php endif; ?>
