@@ -60,7 +60,7 @@
       else {
         // store fail for result property in object variable
         $result->status = "fail";
-        $result->output = "Invalid script found";
+        $result->output = "Invalid script found - $filename";
         $result->file = $filename;
         $failCount +=1;
         $result->fullname = "undefined";            
