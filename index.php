@@ -1,131 +1,81 @@
-<?php
-  function parse_scripts($toJson = false, $prettify = false) {
-    // scan directory for files matching pattern(s)
-    // store filename in object variable
-    $cli = [
-      'py' => 'python',
-      'js' => 'node',
-      'php' => 'php'
-    ];
-    
-    $regex = '/Hello World, this is ([a-zA-Z\s]+) with HNGi7 ID (HNG-\d{5}) using ([\w\s]+) for stage 2 task/i';
-    $totalResults = [];
-    $passCount = 0;
-    $failCount = 0;
-    $totalCount = 0;
-      
-    foreach (glob("scripts/*.{js,py,php}", GLOB_BRACE) as $filename) {
-      $fileExt = pathinfo($filename, PATHINFO_EXTENSION);
-      // echo "$fileExt , $filename \n";
-      
-      $result = new stdClass();
+<?php include_once("parser.php"); ?>
 
-      // for each file, execute the appropriate CLI program
-      $output = shell_exec("$cli[$fileExt] $filename");  
-
-      // if success then
-      if ($output) {
-        // parse output with regex
-        $matched = preg_match($regex, $output, $matches);
-          // if regex match
-          if ($matched) {
-            // store fullname in property
-            $result->fullname = $matches[1];
-
-            // store ID in property
-            $result->id = $matches[2];
-
-            // store language in a property
-            $result->language = $matches[3];
-
-            // store passed in property
-            $result->status = "Pass";
-            $result->output = $output;
-            $result->file = $filename;
-
-            $passCount += 1;
-          }
-          else {
-          // else
-            // store fail for result property   
-            $result->status = "Fail";
-            $result->output = $output;
-            $result->file = $filename;
-            $failCount += 1;
-          }
-      }
-      else {
-        // store fail for result property in object variable
-        $result->status = "Fail";
-        $result->output = "Invalid script found";
-        $result->file = $filename;
-        $failCount +=1;
-      }
-
-      $totalResults[] = $result;   
-      $totalCount += 1;
-    }
-
-    $summary = new stdClass();
-    $summary->totalResults = $totalResults;
-    $summary->passCount = $passCount;
-    $summary->failCount = $failCount;
-    $summary->totalCount = $totalCount;
-
-    if ($toJson) {
-      // return json
-      if($prettify){
-        $summary = json_encode($summary, JSON_PRETTY_PRINT);
-      }
-      else {
-        $summary = json_encode($summary);
-      }
-      
-    }
-
-    
-
-    return $summary;
-  }
-  
-?>
-<?php if (isset($_GET["json"])): ?>
-  <?php 
+<?php if (isset($_GET["json"])):
     print_r(parse_scripts(true, true)); // prettify for now
-  ?>
+?>
   
 
 <?php else : ?>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>HNG Task 1 - Scripts Parser</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <!-- Non-scrolling sidebar -->
-        <div class="col-sm-12 col-md-8">
-          Sidebar goes here
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap"
+            rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/6f42b1cf6f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles.css">
+        <title>Team &mdash; Fury</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <h3>Team Fury</h3>
+                    <ul>
+                        <li>
+                            <p><b>Team-Lead:</b> John Doe</p>
+                        </li>
+                        <li>
+                            <p><b>Frontend Deputy:</b> John Doe</p>
+                        </li>
+                        <li>
+                            <p><b>Backend Deputy:</b> John Doe</p>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col">
+                    <table>
+                        <thead>
+                            <td>S/N</td>
+                            <td>FULL NAME</td>
+                            <td>HNG_ID</td>
+                            <td>LANGUAGE</td>
+                            <td>EMAIL</td>
+                            <td>MESSAGE</td>
+                            <td>STATUS</td>
+                        </thead>
+                        <tbody>
+                            <?php 
+                                $resultsSummary = parse_scripts();
+                                foreach ($resultsSummary->totalResults as $key => $result):
+                            ?>
+                            <tr>
+                                <td><?= $key + 1; ?></td>
+                                <td><?= $result->fullname ?></td>
+                                <td><?= $result->id ?></td>
+                                <td><?= $result->language ?></td>
+                                <td> is there an email ?</td>
+                                <td><?= $result->output ?></td>
+                                <td>
+                                    <?php if ($result->status == "pass"):?>
+                                        <i class="fas fa-check"></i>
+                                    <?php else : ?>
+                                       <i class="fas fa-times"></i> 
+                                    <?php endif; ?>                                    
+                                </td>
+                            </tr>
+                            <?php endforeach ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-      <!-- End Non-scrolling sidebar -->
-        
-      <!-- Main content -->
-        <div class="col-sm-12 col-md-8">
-            main content goes here        
-          <div>
-            <?php print_r(parse_scripts()); ?>
-          </div>  
-        </div>
-      <!-- End Main content -->
-    </div>      
-  </body>
-</html>
+    </body>
+
+    </html>
 
 <?php endif; ?>
