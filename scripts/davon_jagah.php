@@ -5,7 +5,7 @@
   	return $introduction;
   }
 
-  $file="davon_jagah.php";
+ 
   $fullname="Kazeem David";
   $id="HNG-00957";
   $language="PHP";
@@ -14,7 +14,7 @@
 
   if(isset($_GET['json']))
   {
-  	echo json_encode(["file"=>$file, "fullname"=>$fullname , "id"=>$id , "language"=>$language, "email"=>$email]);
+  	echo json_encode(["fullname"=>$fullname , "id"=>$id , "language"=>$language, "email"=>$email]);
   }
   else{
   	echo introduce($fullname, $id, $language);
