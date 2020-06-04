@@ -4,6 +4,7 @@
 let myOutputData = {
     fullName: 'Allistair Vilakazi',
     hngId: 'HNG-01006',
+    email: 'allistair.vilakazi@gmail.com',
     language: 'JavaScript'
 }
 
@@ -14,7 +15,7 @@ let myOutputData = {
  * of the object to return a formatted string.
  */
 const formatOutputData = (outputData) => {
-    return `Hello World, this is ${outputData.fullName} with HNGi7 ID ${outputData.hngId} using ${outputData.language} for stage 2 task`;
+    return `Hello World, this is ${outputData.fullName} with HNGi7 ID ${outputData.hngId} and email ${outputData.email} using ${outputData.language} for stage 2 task`;
 }
 
 /**
