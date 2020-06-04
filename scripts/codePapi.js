@@ -1,4 +1,4 @@
-class scriptObj {
+class ScriptObj {
     constructor(name, id, email, lang) {
         this.fullname = name,
             this.id = id,
@@ -11,7 +11,7 @@ class scriptObj {
     }
 }
 
-sammyScript = new scriptObj("Samaru Ebinne", "HNG-00086", "sammyebinne@gmail.com", "JavaScript");
+sammyScript = new ScriptObj("Samaru Ebinne", "HNG-00086", "sammyebinne@gmail.com", "JavaScript");
 
 
 
