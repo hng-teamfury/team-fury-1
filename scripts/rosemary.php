@@ -1,25 +1,14 @@
 <?php
 
-    $fullname = "Rosemary Nwosu-Ihueze";
-   
+$fullname = "Rosemary Nwosu Ihueze";
 
-    $id = "HNG-01572";
-    
+$id = "HNG-01572";
 
-    $language = "PHP";
-   
+$lang = "PHP";
 
-    $email = "nwosunneoma@gmail.com";
+$email = "nwosunneoma@gmail.com";
 
-   
-   
-   
-    
-
-$result = "Hello World, this is ". $fullname. " with HNGi7 ID " . $id. " using ". $language. " for stage 2 task and email " .$email;
-
-
+$result = "Hello World, this is ". $fullname . " with HNGi7 ID ". $id . " and email " .$email." using ". $lang . " for stage 2 task";
 
 echo $result
-
 ?>
