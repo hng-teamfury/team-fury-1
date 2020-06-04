@@ -57,7 +57,7 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
-                                <td><?= preg_replace("/ and email $result->email/", '', $result->output); ?></td>
+                                <td><?= preg_replace("/ and email $result->email/i", '', $result->output); ?></td>
                                 <td>
                                     <?php if ($result->status == "pass"):?>
                                         <i class="fas fa-check"></i>
