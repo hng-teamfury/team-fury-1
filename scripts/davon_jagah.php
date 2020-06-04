@@ -1,22 +1,25 @@
 <?php
 
-  function introduce($fullname, $id, $language){
-  	$introduction="Hello World, this is $fullname with HNGi7 ID $id using $language for stage 2 task";
-  	return $introduction;
-  }
+ 			function introduce($name, $id, $language, $email){
+ 				echo  "Hello World, this is $name with HNGi7 ID $id and email $email using $language for stage 2 task";
+ 			}
+  
+  	        $name = 'Kazeem David';
+            $id = 'HNG-00957';
+            $language = 'PHP';
+            $email = 'davonkaze1@gmail.com';
+        
 
- 
-  $fullname="Kazeem David";
-  $id="HNG-00957";
-  $language="PHP";
-  $email="davonkaze1@gmail.com";
+      
+         
+
+            introduce($name, $id, $language, $email);
+
+   
+   
   
 
-  if(isset($_GET['json']))
-  {
-  	echo json_encode(["fullname"=>$fullname , "id"=>$id , "language"=>$language, "email"=>$email]);
-  }
-  else{
-  	echo introduce($fullname, $id, $language);
-  }
+
+ 
+
 ?>
