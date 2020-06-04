@@ -5,7 +5,6 @@
         $hngid = "HNG-02038";
         $language = "PHP";
 
-    echo "Hello World this is {$fullname} with HNGi7 ID {$hngid} using {$language} for stage 2 task";
+    echo "Hello World, this is {$fullname} with HNGi7 ID {$hngid} and email {$email} using {$language} for stage 2 task";
 ?>
-
 
