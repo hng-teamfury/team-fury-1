@@ -9,7 +9,4 @@ hng_05824 = {
 dump_details = json.dumps(hng_05824)
 load_details = json.loads(dump_details)
 
-print ('Hello World, this is', load_details['name'],
-            'with HNGi7 ID', load_details['id'],
-            'using', load_details['language'],
-            'for stage 2 task')
+print ('Hello World, this is %s with HNGi7 ID %s and email %s using %s for stage 2 task ' % (load_details['name'], load_details['id'], load_details['email'], load_details['language']))
