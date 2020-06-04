@@ -1,4 +1,4 @@
-const myData= {
+const myData = {
     fullname: "Ekaji Onah",
     ID: "HNG-05496",
     language: "javascript",
