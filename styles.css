@@ -3,7 +3,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto Slab', serif;;
 }
 * {
 	margin: 0;
@@ -53,7 +53,7 @@ h1 {
 }
 .nav ul li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 12px;
 }
 .nav ul li a {
 	color: white;

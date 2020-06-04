@@ -1,12 +1,8 @@
 <?php include_once("parser.php"); ?>
 
-
-
-
 <?php if (isset($_GET["json"])):
-    print_r(parse_scripts(true, true)); // prettify for now
-?>
-  
+    print_r(parse_scripts(true, false)); // prettify for now
+?> 
 
 
 <?php else : ?>
@@ -18,7 +14,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/6f42b1cf6f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles.css">
         <title>Team &mdash; Fury</title>
@@ -33,25 +29,28 @@
             </div>
             <div class="nav" id="nav">
                 <ul>
-                    <li><a href="#"><span class="t-lead">Team Lead:</span> GODSTIME JOHN</a></li>
-                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> FAITH MOFOKENG</a></li>
+                    <li><a href="#"><span class="t-lead">Team Lead:</span> Godstime John</a></li>
+                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> Faith Mofokeng</a></li>
                     <li class="github-icon"><a href="https://github.com/jgodstime/team-fury-1"><i class="fab fa-github"></i> Github</a></li>
                     <li class="slack-icon"><a href="https://hngi7.slack.com/archives/C01482Z0095/p1591106636161000"><i class="fab fa-slack"></i> Slack</a></li>
                 </ul>
             </div>
         </header>
         <div class="highlight">
+            <?php 
+                $resultsSummary = parse_scripts();
+            ?>
             <div class="total">
                 <span>Submitted</span>
-                <span class="total-members" id="total-members">209</span>
+                <span class="total-members" id="total-members"><?= $resultsSummary->totalCount ?></span>
             </div>
             <div class="passes">
                 <span>Passed</span>
-                <span class="total-passes" id="total-members">150</span>
+                <span class="total-passes" id="total-members"><?= $resultsSummary->passCount ?></span>
             </div>
             <div class="fails">
                 <span>Fails</span>
-                <span class="total-fails" id="total-members">59</span>
+                <span class="total-fails" id="total-members"><?= $resultsSummary->failCount ?></span>
             </div>
         </div>
         <div class="container">
@@ -68,8 +67,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        $resultsSummary = parse_scripts();
+                        <?php                        
                         foreach ($resultsSummary->totalResults as $key => $result) :
                         ?>
                             <tr>
@@ -78,7 +76,7 @@
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
 
-                                <td><?= preg_replace("/ and email $result->email/", '', $result->output); ?></td>
+                                <td><?= preg_replace("/ and email $result->email/i", '', $result->output); ?></td>
                                 <td>
                                     <?php if ($result->status == "pass") : ?>
                                         <span class="status pass"><i class="fas fa-user-check"></i></span>
