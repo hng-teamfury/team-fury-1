@@ -1,5 +1,5 @@
 <?php 
-		function mydetails(){
+		function viewMe(){
 
 			$id="HNG-04469";
 			$fullname="Adesina Oluwatobi";
@@ -10,7 +10,7 @@
 
 }
 		  
-  mydetails();
+  viewMe();
 
 
 ?> 
