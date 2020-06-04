@@ -16,4 +16,4 @@ sammyScript = new scriptObj("Samaru Ebinne", "HNG00086", "sammyebinne@gmail.com"
 
 
 console.log(sammyScript.output);
-return sammyScript.output;
+
