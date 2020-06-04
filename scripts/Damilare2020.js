@@ -4,5 +4,5 @@ var data = {
     email:"Damilarelamine@gmail.com",
     language:"JavaScript"
 };
-var x = "Hello World, this is " + data.fullName + " with HNGi7 ID " + data.id + " using " + data.language + " for stage 2 task";
+var x = "Hello World, this is " + data.fullName + " with HNGi7 ID " + data.id + " and email " + data.email + " using " + data.language + " for stage 2 task";
 console.log(x);
