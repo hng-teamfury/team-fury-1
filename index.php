@@ -1,8 +1,12 @@
 <?php include_once("parser.php"); ?>
 
-<?php if (isset($_GET["json"])) :
+
+
+
+<?php if (isset($_GET["json"])):
     print_r(parse_scripts(true, true)); // prettify for now
 ?>
+  
 
 
 <?php else : ?>
@@ -13,6 +17,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/6f42b1cf6f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles.css">
@@ -72,6 +77,7 @@
                                 <td><?= $result->fullname ?></td>
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
+
                                 <td><?= preg_replace("/ and email $result->email/", '', $result->output); ?></td>
                                 <td>
                                     <?php if ($result->status == "pass") : ?>
@@ -84,6 +90,7 @@
                         <?php endforeach ?>
                     </tbody>
                 </table>
+
             </div>
         </div>
     </body>
