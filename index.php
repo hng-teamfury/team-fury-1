@@ -14,7 +14,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/6f42b1cf6f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles.css">
         <title>Team &mdash; Fury</title>
@@ -29,8 +29,8 @@
             </div>
             <div class="nav" id="nav">
                 <ul>
-                    <li><a href="#"><span class="t-lead">Team Lead:</span> GODSTIME JOHN</a></li>
-                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> FAITH MOFOKENG</a></li>
+                    <li><a href="#"><span class="t-lead">Team Lead:</span> Godstime John</a></li>
+                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> Faith Mofokeng</a></li>
                     <li class="github-icon"><a href="https://github.com/jgodstime/team-fury-1"><i class="fab fa-github"></i> Github</a></li>
                     <li class="slack-icon"><a href="https://hngi7.slack.com/archives/C01482Z0095/p1591106636161000"><i class="fab fa-slack"></i> Slack</a></li>
                 </ul>
@@ -76,7 +76,7 @@
                                 <td><?= $result->id ?></td>
                                 <td><?= $result->language ?></td>
 
-                                <td><?= preg_replace("/ and email $result->email/", '', $result->output); ?></td>
+                                <td><?= preg_replace("/ and email $result->email/i", '', $result->output); ?></td>
                                 <td>
                                     <?php if ($result->status == "pass") : ?>
                                         <span class="status pass"><i class="fas fa-user-check"></i></span>

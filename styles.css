@@ -53,7 +53,7 @@ h1 {
 }
 .nav ul li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 12px;
 }
 .nav ul li a {
 	color: white;
