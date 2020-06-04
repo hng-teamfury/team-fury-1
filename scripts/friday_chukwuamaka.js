@@ -1,0 +1,8 @@
+var fullName = "Friday Chukwuamaka",
+  myId = "HNG-00768",
+  language = "javaScript",
+  myEmail = "fridaychukwuamaka@gmail.com";
+
+var result = `Hello world, this is ${fullName} with HNGi7 ID ${myId} and email ${myEmail} using ${language} for stage 2 task`;
+
+console.log(result);
