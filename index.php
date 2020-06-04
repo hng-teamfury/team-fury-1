@@ -1,12 +1,8 @@
 <?php include_once("parser.php"); ?>
 
-
-
-
 <?php if (isset($_GET["json"])):
-    print_r(parse_scripts(true, true)); // prettify for now
-?>
-  
+    print_r(parse_scripts(true, false)); // prettify for now
+?> 
 
 
 <?php else : ?>
@@ -41,17 +37,20 @@
             </div>
         </header>
         <div class="highlight">
+            <?php 
+                $resultsSummary = parse_scripts();
+            ?>
             <div class="total">
                 <span>Submitted</span>
-                <span class="total-members" id="total-members">209</span>
+                <span class="total-members" id="total-members"><?= $resultsSummary->totalCount ?></span>
             </div>
             <div class="passes">
                 <span>Passed</span>
-                <span class="total-passes" id="total-members">150</span>
+                <span class="total-passes" id="total-members"><?= $resultsSummary->passCount ?></span>
             </div>
             <div class="fails">
                 <span>Fails</span>
-                <span class="total-fails" id="total-members">59</span>
+                <span class="total-fails" id="total-members"><?= $resultsSummary->failCount ?></span>
             </div>
         </div>
         <div class="container">
@@ -68,8 +67,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        $resultsSummary = parse_scripts();
+                        <?php                        
                         foreach ($resultsSummary->totalResults as $key => $result) :
                         ?>
                             <tr>
