@@ -12,5 +12,5 @@ const User = {
     language: 'JS',
     email: 'email'
 }
-console.log(JSON.stringify(message + ' this is '+ name + ' with HNGi7 ID ' + HNGi7_ID + ' and email '+ email + ' using ' + language + ' for stage 2 task'))
+console.log(message + ' this is '+ name + ' with HNGi7 ID ' + HNGi7_ID + ' and email '+ email + ' using ' + language + ' for stage 2 task')
 
