@@ -32,15 +32,3 @@ name1.introduce();
 
 
 
-
-
-// let name = 'Abisoye Alli-Balogun';
-// let id = 'HNG-00110';
-// let language = 'Javascript';
-// let output = "Hello World, this is " + name + " with HNGi7 " + id + " using " + language + " for stage 2 task";
-// function displayOutput() {
-//     return output;  
-// };
-
-// console.log(displayOutput());
-// displayOutput();
