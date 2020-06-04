@@ -16,7 +16,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/6f42b1cf6f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="./index.css">
         <title>Team &mdash; Fury</title>
         <script src="./index.js" defer></script>
     </head>
