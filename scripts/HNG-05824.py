@@ -11,5 +11,6 @@ load_details = json.loads(dump_details)
 
 print ('Hello World, this is', load_details['name'],
             'with HNGi7 ID', load_details['id'],
+            'and email', load_details['email'],
             'using', load_details['language'],
             'for stage 2 task')
