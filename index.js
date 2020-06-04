@@ -10,3 +10,4 @@ const menuDisplay = (x, myClass) => {
 
 const menuBtn = document.querySelector('.menu-bar');
 menuBtn.addEventListener('click', menuDisplay);
+document.write('This working');

@@ -69,23 +69,26 @@ h1 {
 	opacity: 1;
 }
 .container {
-	padding: 30px 50px;
+	display: flex;
+	justify-content: center;
 }
-.row.highlight {
+.highlight {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 0 40px;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 30px;
 }
-.row.highlight > div {
+.highlight > div {
 	max-width: 150px;
 	border: 1px solid #c9c5c5;
 	padding: 6px 10px;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	border-radius: 4px;
 	background: #f1f1f1;
 }
-.row.highlight > div span:last-child {
+.highlight > div span:last-child {
 	float: right;
 	margin-left: 10px;
 	padding: 2px 5px;
@@ -104,27 +107,36 @@ h1 {
 }
 
 .table {
+	width: 85%;
 	margin-top: 20px;
 	box-sizing: border-box;
+	box-shadow: 1px 1px 10px 1px #dfe6e9;
 	overflow-x: auto;
 }
 table {
 	border-collapse: collapse;
 	width: 100%;
 }
-th {
+
+thead {
 	text-align: left;
 	color: white;
 	background: purple;
 }
+tr {
+	border-bottom: 1px solid #dfe6e9;
+}
+
 th:first-child {
 	border-radius: 5px 0 0 0;
 	width: 40px;
 	text-align: center;
 }
+
 th:last-child {
 	border-radius: 0 5px 0 0;
 }
+
 tr:nth-child(even) {
 	background-color: #f3efef;
 }
@@ -132,12 +144,12 @@ th,
 td {
 	border: 1px solid #ffffff57;
 	padding: 15px 15px;
-	font-size: 18px;
+	font-size: 0.8em;
 }
 
 .status {
 	margin-left: 10px;
-	font-size: 25px;
+	font-size: 20px;
 }
 .status.pass {
 	color: green;
@@ -150,13 +162,16 @@ td {
 	.container {
 		padding: 10px;
 	}
+	.table {
+		width: 100%;
+	}
 	header > div {
 		width: 100%;
 	}
-	.row.highlight {
+	.highlight {
 		justify-content: center;
 	}
-	.row.highlight > div {
+	.highlight > div {
 		width: 70%;
 		justify-content: center;
 		margin-bottom: 10px;
