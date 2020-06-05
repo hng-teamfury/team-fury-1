@@ -6,6 +6,6 @@ function message() {
     console.log('Hello World, this is ' + fullName +
       ' with HNGi7-ID ' + id + ' and email ' +
       email + ' using ' + language +
-      ' for Stage 2 task. ');
+      ' for Stage 2 task ');
   }
   message();
