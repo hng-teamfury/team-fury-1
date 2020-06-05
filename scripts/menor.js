@@ -5,11 +5,4 @@ var email = "ajirimenor@gmail.com";
 
 var myOutput = `Hello World, this is ${fullName} with HNGi7 ID ${hngId} and email ${email} using ${langauge} for stage 2 task`;
 
-function menorOutput(){
-    
-   
-    return myOutput;
-}
-
-
-menorOutput();
+console.log(myOutput);
