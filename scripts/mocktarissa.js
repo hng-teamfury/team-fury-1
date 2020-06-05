@@ -5,7 +5,7 @@ const app= ()=>{
         language:"Javascript",
         email:"mocktarissa@gmail.com"
     } 
-     console.log(`Hello World, this is ${data.fullName} with HNGi7 ID ${data.id} using ${data.language} for stage 2 task`)
+     console.log(`Hello World, this is ${data.fullName} with HNGi7 ID ${data.id} and email ${data.email} using ${data.language} for stage 2 task`)
 }
 
 app()
