@@ -1,3 +1,4 @@
+#my script
 fullName="Innocent Thomas"
 ID="HNG-00678"
 langage="Python"
