@@ -6,13 +6,13 @@ function HNGi7Profile() {
   console.log(
     "Hello Word, this is " +
       FullName +
-      "with HNGi7 ID" +
+      " with HNGi7 ID " +
       ID +
-      "and email " +
+      " and email " +
       Email +
-      "using " +
+      " using  " +
       Language +
-      "for stage 2 track "
+      " for stage 2 task "
   );
 }
 HNGi7Profile();
