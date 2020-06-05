@@ -1,7 +1,7 @@
 const me = {
     my_name: 'Oguntade Abass',
     my_id: 'HNG-00851',
-    my_email: 'Oguntadeabass1@gmail.com',
+    my_email: 'oguntadeabass1@gmail.com',
     my_language: 'Javascript',
 }
 
