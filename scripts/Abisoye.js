@@ -9,4 +9,4 @@ function displayOutput() {
     return output;
 }
 
-displayOutput();
+console.log(displayOutput());
