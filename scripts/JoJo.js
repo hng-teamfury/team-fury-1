@@ -6,6 +6,6 @@ let programminglanguage = 'PHP'
 
 let myemail = 'jonathan.joseph43@yahoo.com'
 
-printstmt = `Hello World, this is ${name} with HNGi7 ID ${id} and email ${myemail} using ${programminglanguage} for stage 2 task`
+printstmt = `Hello World, this is ${myname} with HNGi7 ID ${id} and email ${myemail} using ${programminglanguage} for stage 2 task`
 
 console.log(printstmt)
