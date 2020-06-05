@@ -4,15 +4,7 @@ function HNGi7Profile() {
   let Email = "abuhsolo05@gmail.com";
   let Language = "Javascript";
   console.log(
-    "Hello Word, this is " +
-      FullName +
-      " with HNGi7 ID " +
-      ID +
-      " and email " +
-      Email +
-      " using  " +
-      Language +
-      " for stage 2 task "
+    `Hello World, this is ${FullName} with HNGi7 ID ${ID} and email ${Email} using ${Language} for stage 2 task`
   );
 }
 HNGi7Profile();
