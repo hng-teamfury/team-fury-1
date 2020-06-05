@@ -10,3 +10,4 @@ function Student() {
 }
 
 Student();
+//function call
