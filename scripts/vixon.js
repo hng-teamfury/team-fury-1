@@ -1,8 +1,8 @@
-var myDetails = {name:"Ernest Paul Oganji", 
-	email:"epospiky@gmail.com", 
-	id:"HNG-03606", 
-	language:"JavaScript"};
-const fullDetails = function(){
-	return "Hello, world! This is " +myDetails.name+ " with the HNG ID" +myDetails.id+ " and email address " +myDetails.email+ " using " +myDetails.language+ "language for stage 2 promotion";
-	}
+const name ="Ernest Paul Oganji";
+const email="epospiky@gmail.com";
+const id="HNG-03606" ;
+const language="JavaScript";
+
+const fullDetails = ()=>{
+	return `Hello, world! This is ${name} with the HNG ID ${id} and email address ${email} using ${language} language for stage 2 promotion`}
 console.log(fullDetails());
