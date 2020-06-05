@@ -1,7 +1,7 @@
 const fullname= "Igweokwu Leonard Ekene";
 const ID= "HNG-06551";
 const email="Ekeneigweokwu@gmail.com";
-const language= "Java Script";
+const language= "Javascript";
 
 function my(){
  
