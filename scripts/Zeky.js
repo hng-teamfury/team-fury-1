@@ -1,11 +1,9 @@
-const Task2 = () => {
-    const myself = {
-            fullName: 'Ajele Oluwademilade',
-            hngId: 'HNG-01539',
-            language: 'JavaScript',
-	    email: 'ajelelade@gmail.com',
-    };
-    return `Hello World, this is ${myself.fullName} with HNGi7 ID ${myself.hngId} using ${myself.language} for stage 2 task`;
-};
+const fullName = 'Ajele Oluwademilade';
+const hngId ='HNG-01539';
+const language = 'JavaScript';
+const email = 'ajelelade@gmail.com';
+const result = (fullName,hngId,language) => {
+    return `Hello World, this is ${fullName} with HNGi7 ID ${hngId} using ${language} for stage 2 task`;
+}
 
-console.log(Task2());
+console.log(result(fullName, hngId, language));
