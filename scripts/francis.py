@@ -8,3 +8,10 @@ print( f"Hello World,this is {name} with  HNGi7 ID HNG-{id} and email {email} us
 
 
 
+def script():
+  data = "Hello World, this is {} with HNGi7 ID {} and email {} using {} for stage 2 task".format(name,id,email,language)
+  output = json.dumps(data)
+  print(output) 
+  
+
+script() 
