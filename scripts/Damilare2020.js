@@ -1,6 +1,3 @@
-// Created Using Easy HTML v1.4.1
-// https://play.google.com/store/apps/details?id=ak.andro.easyhtml
-
 var name = "Oluwadamilare Okubanjo";
 var id = "HNG-02526";
 var language = "Javascript";
