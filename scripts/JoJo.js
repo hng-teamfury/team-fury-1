@@ -2,7 +2,7 @@ let myname = 'Jonathan Joseph Ikpe'
 
 let id = 'HNG-05569'
 
-let programminglanguage = 'PHP'
+let programminglanguage = 'Javascript'
 
 let myemail = 'jonathan.joseph43@yahoo.com'
 
