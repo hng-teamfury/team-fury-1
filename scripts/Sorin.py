@@ -9,7 +9,7 @@ def myscript():
     ID = 'HNG-02213'
     email = 'sorin.mykael@gmail.com'
     language = 'python'
-    print(f'Hello World, this is {name} with HNGi7 ID {ID} using {language} for stage 2 task')
+    print(f'Hello World, this is {name} with HNGi7 ID {ID} and email {email} using {language} for stage 2 task')
 
 
 # In[2]:
