@@ -1,3 +1,4 @@
+
 const details = {
     name: "Adesuwa Adolosa",
     id: "HNG-02362",
@@ -12,3 +13,4 @@ function output(){
     console.log(response);
 }
 output();
+

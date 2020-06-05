@@ -1,12 +1,11 @@
-const myData = {
-    fullname: "Ekaji Onah",
-    ID: "HNG-05496",
-    language: "javascript",
-    email: "ekajionah@gmail.com"
-}
+   let fullname = "Ekaji Onah";
+   let id = "HNG-05496";
+   let language = "javascript";
+   let email = "ekajionah@gmail.com";
 
-const printBio = () => {
-  return  `Hello World, this is ${myData.fullname} with HNGi7 ID ${myData.ID} using ${myData.language} for stage 2 task`;
-}
 
-printBio();
+  let bio = `Hello World, this is ${fullname} with HNGi7 ID ${id} and email ${email} using ${language} for stage 2 task`;
+console.log(bio)
+
+
+
