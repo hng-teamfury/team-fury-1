@@ -1,9 +1,11 @@
 <?php
-  $fullName = "Onyeka Eneanya";
-  $hngI7Id = "HNG-00136";
-  $languageUsed = "PHP";
-  $stage = "stage 2";
 
-  echo "Hello World, this is {$fullName} with HNGi7 ID {$hngI7Id} using {$languageUsed} for {$stage} task.";
 
-?>
+    function review($name, $id, $language)
+    {
+        echo "Hello World, this is $name with HNGi7 ID $id using $language for stage 2 task";
+    }
+
+    review('Onyeka Eneanya', 'HNG-00136', 'PHP');
+	
+	?>
