@@ -1,13 +1,16 @@
 
-// my details
-let fullName = 'Ashigwure Joshua';
-let id = 'HNG-02938';
-let email = 'ashigwurejoshua@gmail.com';
-let languageUsed = 'javascript';
+function output(){
+ // my details
+let myDetails ={fullName: 'Ashigwure Joshua',
+id: 'HNG-02938',
+email: 'ashigwurejoshua@gmail.com',
+languageUsed: 'javascript'}
 
 
-let myString ='Hello world, this is ' + fullName + ' with HNGi7 ID:'
-+ id +', using ' + languageUsed + ' for stage 2 task';
+let myString ='Hello world, this is ' + myDetails.fullName + ' with HNGi7 ID '
++ myDetails.id + ' and email ' + myDetails.email + ' using ' + myDetails.languageUsed + ' for stage 2 task';
 
 // output
 console.log(myString);
+}
+output();
