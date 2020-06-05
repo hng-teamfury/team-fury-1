@@ -1,3 +1,5 @@
-def hello_world():
-    print('Hello World, this is Olufunso Soile with HNGi7 ID HNG-02601 using python for stage 2 task email funsoadetola@gmail.com')
-hello_world()
+fullname = "Olufunso Soile"
+ID = "HNG-02601"
+email = "funsoadetola@gmail.com"
+language = "Python"
+print(f'Hello World, this is {fullname} with HNGi7 ID {ID} and email {email} using {language} for stage 2 task')
