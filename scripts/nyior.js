@@ -1,6 +1,6 @@
 // user data
 
-const data = {
+var data = {
     name: "Nyior Clement",
     hngi_id: "HNG-05586",
     language: "Javascript",
