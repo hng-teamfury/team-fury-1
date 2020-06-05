@@ -20,7 +20,7 @@ To get started locally, follow these instructions:
 2. Use your forked repo to clone to your local repository by using `git`.
 3. Make sure that you have XAMPP 7.x.x or later installed (remember your install path for later). See instructions [here](https://www.apachefriends.org/download.html).
 
-## <a name="createscript"></a> 2. Creating Your Script
+## <a name="createscript"></a> Creating Your Script
 The stage 2 task requres each and every member in Team Fury to create a script. Read further for more information.
 
 ### The Goal
