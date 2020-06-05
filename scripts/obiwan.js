@@ -1,8 +1,6 @@
-let obj={
-  name : "Abioye Feyifoluwa",
-  id : "HNG-00889",
-  language : "JavaScript",
-  email : "abioyefeyifoluwa@gmail.com"
-}
+let fullName = "Abioye Feyifoluwa";
+let email = "abioyefeyifoluwa@gmail.com";
+let id = "HNG-00889";
+let language = "JavaScript";
 
-console.log(`Hello World, this is ${obj.name} with HNGi7 ID ${obj.id} using ${obj.language} for stage 2 task`)
+console.log(`Hello World, this is ${fullName} with HNGi7 ID ${id} using ${language} for stage 2 task`)
