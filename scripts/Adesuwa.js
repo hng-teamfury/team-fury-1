@@ -1,5 +1,16 @@
-let name= "Adesuwa Adolosa";
-let id= "HNG-02362";
-let language= "Javascript";
-let email = "adesuwahealthalive@gmail.com";
-console.log(`Hello World, this is ${name} with HNGi.7 ID ${id} and email ${email} using ${language} for stage 2 task`)
+
+const details = {
+    name: "Adesuwa Adolosa",
+    id: "HNG-02362",
+    language: "JavaScript",
+    email: "adesuwahealthalive@gmail.com"
+};
+
+const response = `Hello world, tihs is ${details.name} with HNGi7 ID ${details.id} and email ${details.email} using ${details.language} for stage 2 task`;
+
+
+function output(){
+    console.log(response);
+}
+output();
+
