@@ -1,3 +1,4 @@
+
 var profile = {
     fullname: "Ekpenyong David Michael",
 
@@ -17,3 +18,4 @@ function myprofile(){
 }
 
 myprofile();
+

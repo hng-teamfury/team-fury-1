@@ -3,12 +3,14 @@
     // scan directory for files matching pattern(s)
     // store filename in object variable
     $cli = [
-      'py' => 'python',
+      'py' => 'python3',
       'js' => 'node',
-      'php' => 'php'
+      'php' => 'php',
+      'java' => 'java',
+      'dart' => 'dart'
     ];
     
-    $regex = '/Hello World, this is ([a-zA-Z\s]+) with HNGi7 ID (HNG-\d{5}) and email ([_a-z0-9-]+[\.[_a-z0-9-]+]*@[a-z0-9-]+[\.[a-z0-9-]+]*.[a-z]{2,3}) using ([\w\s]+) for stage 2 task/i';
+    $regex = '/Hello World, this is ([a-zA-Z\s-]+) with HNGi7 ID (HNG-\d{5}) and email ([_a-z0-9-]+[\.[_a-z0-9-]+]*@[a-z0-9-]+[\.[a-z0-9-]+]*.[a-z]{2,3}) using ([\w\s]+) for stage 2 task/i';
     $totalResults = [];
     $passCount = 0;
     $failCount = 0;
@@ -86,7 +88,7 @@
     if ($toJson) {
       // return json
       if($prettify){
-        $summary = json_encode($totalResults, JSON_PRETTY_PRINT);
+        $summary = '<pre>'.json_encode($totalResults, JSON_PRETTY_PRINT).'</pre>';
       }
       else {
         $summary = json_encode($totalResults);
