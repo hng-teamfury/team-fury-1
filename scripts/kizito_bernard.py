@@ -1,13 +1,12 @@
 fullname = "Kizito Bernard";
-id = "HNG-02348";
+iD = "HNG-02348";
 email = "kizitobernard@gmail";
 language = "python";
     
 def intern_intro():
 
-    print ("Hello World, this is " + fullname + " with HNGi7ID " + id + "  using " + language + " for stage 2 task");
+    print ("Hello World, this is " + str(fullname) + " with HNGi7 ID " + str(iD )+ " and email " + str(email) + " using " + str(language) + " for stage 2 task");
     
     return
     
-
-intern_intro() 
+intern_intro();
