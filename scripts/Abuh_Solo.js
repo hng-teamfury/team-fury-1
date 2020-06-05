@@ -1,18 +1,18 @@
-function internShip() {
-  let fullName = "Habu Suleiman";
-  let id = "HNG-05884";
-  let email = "abuhsolo05@gmail.com";
-  let language = "Java script";
+function HNGi7Profile() {
+  let FullName = "Habu Suleiman";
+  let ID = "HNG-05884 ";
+  let Email = "abuhsolo05@gmail.com";
+  let Language = "Javascript";
   console.log(
-    "Hello World, This is  " +
-      fullName +
-      "    with HNGi7 ID   " +
-      id +
-      "and Email " +
-      email +
-      "   using  " +
-      language +
-      " for stage 2 task "
+    "Hello Word, this is " +
+      FullName +
+      "with HNGi7 ID" +
+      ID +
+      "and email " +
+      Email +
+      "using " +
+      Language +
+      "for stage 2 track "
   );
 }
-internShip();
+HNGi7Profile();
