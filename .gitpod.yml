@@ -6,6 +6,7 @@ ports:
   onOpen: open-preview
 
 tasks:
+# show helpful hints in console
 - name: Terminal
   command: >
     echo "";
@@ -14,11 +15,10 @@ tasks:
     echo " * apachectl start";
     echo " * gp open /var/log/apache2/access.log";
     echo " * gp open /var/log/apache2/error.log";
+# configure and start web server
 - name: Apache
   command: >
-    git clone https://github.com/gitpod-io/apache-example.git;
-    cp apache-example/apache/apache.conf /etc/apache2/apache2.conf;
-    rm -rf apache-example/;
+    cp apache.conf /etc/apache2/apache2.conf;
     apachectl start &&
     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log;
     gp await-port 8001 && gp preview $(gp url 8001)
