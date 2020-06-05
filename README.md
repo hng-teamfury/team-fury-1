@@ -59,7 +59,7 @@ Or you can create a PR adding instructions, on this README file, for your IDE.
 ## <a name="test"></a> Testing Your Script
 To test your script, follow these instructions:
 
-1. Run a local test server
+1. [Run a local test server](#runserver)
 2. Check the outcome of your script through the website's UI.
 
 ## <a name="pullrequest"></a> Making a Pull Request
