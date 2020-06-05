@@ -3,7 +3,7 @@
     // scan directory for files matching pattern(s)
     // store filename in object variable
     $cli = [
-      'py' => 'python',
+      'py' => 'python3',
       'js' => 'node',
       'php' => 'php',
       'java' => 'java',
