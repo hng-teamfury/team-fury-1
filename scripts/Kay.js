@@ -1,5 +1,4 @@
- Name = "Attah Kelechi Nathan"
- let ID = "HNG-00363"
- let Language = "Javascript"
- let Email = "kelechinathan04@gmail.com"
- console.log("Hello World, this is" + " " + Name + " " + "with HNGi7 ID" + " " + ID + " " + "using" + " " + Language + " " + "for stage 2 task.")
+function kaycee() {
+      return "Hello World, this is Attah Kelechi Nathan with HNGi7ID HNG00363 and Email Kelechinathan04@gmail.com using Javascript for task2 stage"
+    }
+    console.log(kaycee())
