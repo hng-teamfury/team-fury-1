@@ -6,7 +6,7 @@ function hello() {
     email: "preciousrobinsonokafor@gmail.com"
   }
 
-  return `Hello World, this is ${info.fullname} with HNGi7 ID ${info.ID} and email ${info.email} using ${info.language} for stage 2 task`;
+  return `Hello World, this is ${info.fullname} with HNGi7 ID ${info.ID} using ${info.language} for stage 2 task`;
 }
 
 console.log(hello());
