@@ -1,10 +1,11 @@
-var text="hello world,Am ";
-var fullname="Israel ";
-var word="from ";
-var company="HNGi7 ";
+var text="hello world,this is ";
+var fullname="oluwafemi adeoye adeyemi";
+var text1="with "
 var id="HNG-04195 ";
-var text1="using ";
-var language="javascript language ";
-var stage="for stage 2 task email is,";
+var text2="and mail"
 var email="adeoyefemi3@gmail.com";
-console.log(text+fullname+word+company+id+text1+language+stage+email);
+var text3="using ";
+var language="javascript ";
+var stage="for stage 2 task";
+
+console.log(text+fullname+text1+id+text2+email+text3+language+stage);
