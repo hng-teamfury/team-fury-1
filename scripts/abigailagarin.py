@@ -1,2 +1,6 @@
-'''Hello World, this is Abigail Agarin with HNGi7 ID HNG-04180 and email abbie_agarin@yahoo.com, 
-    Im using python for stage 2 task'''
+name='Abigail Agarin'
+hngid='HNG-04180 '
+email='abbie_agarin@yahoo.com'
+language='python'
+result='Hello World, this is{name} with {hngid} and email address{email} using {language} for stage 2 task'
+print(result)

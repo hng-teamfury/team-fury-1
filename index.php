@@ -1,7 +1,7 @@
 <?php include_once("parser.php"); ?>
 
 <?php if (isset($_GET["json"])):
-    print_r(parse_scripts(true, false)); // prettify for now
+    print_r(parse_scripts(true, true)); // prettify for now
 ?> 
 
 
@@ -29,9 +29,9 @@
             </div>
             <div class="nav" id="nav">
                 <ul>
-                    <li><a href="#"><span class="t-lead">Team Lead:</span> Godstime John</a></li>
-                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> Faith Mofokeng</a></li>
-                    <li class="github-icon"><a href="https://github.com/jgodstime/team-fury-1"><i class="fab fa-github"></i> Github</a></li>
+                    <li><a href="#"><span class="t-lead">Team Lead:</span> Piouson</a></li>
+                    <li><a href="#"><span class="t-deputy">Team Deputy:</span> </a></li>
+                    <li class="github-icon"><a href="https://github.com/hng-teamfury/team-fury-1"><i class="fab fa-github"></i> Github</a></li>
                     <li class="slack-icon"><a href="https://hngi7.slack.com/archives/C01482Z0095/p1591106636161000"><i class="fab fa-slack"></i> Slack</a></li>
                 </ul>
             </div>
