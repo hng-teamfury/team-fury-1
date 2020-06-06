@@ -2,7 +2,7 @@ var name;
 var id;
 var email;
 var language;
-	 name = "Omoniyi Vivtor Olalekan";
+	 name = "Omoniyi Victor Olalekan";
 	 id = "HNG-00852";
 	 email = "vomoniyi2001@gmail.com";
 	 language = "JavaScript";	 
