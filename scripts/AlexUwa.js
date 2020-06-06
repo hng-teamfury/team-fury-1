@@ -4,13 +4,13 @@ let language = "JavaScript";
 let fullname = "Obayagbona Uwagbae Alexander";
 
 console.log(
-  "Hello world, this is " +
+  "Hello World, this is " +
     fullname +
-    ", with the HNGi7 ID of " +
+    " with HNGi7 ID " +
     id +
-    ", and my email is " +
+    " and email " +
     email +
-    ". And I am using " +
+    " using " +
     language +
-    " for the stage 2 task"
+    " for stage 2 task"
 );
