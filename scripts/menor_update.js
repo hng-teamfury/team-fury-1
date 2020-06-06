@@ -1,4 +1,3 @@
-
 var fullName = "Theophilus Ajiri Menor"; 
 var hngId = "HNG-02809";
 var langauge = "javascript";

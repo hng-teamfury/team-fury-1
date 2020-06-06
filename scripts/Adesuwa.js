@@ -1,16 +1,3 @@
 
-const details = {
-    name: "Adesuwa Adolosa",
-    id: "HNG-02362",
-    language: "JavaScript",
-    email: "adesuwahealthalive@gmail.com"
-};
-
-const response = `Hello world, tihs is ${details.name} with HNGi7 ID ${details.id} and email ${details.email} using ${details.language} for stage 2 task`;
-
-
-function output(){
-    console.log(response);
-}
-output();
+console.log("Hello World, this is Adesuwa Adolosa with HNGi7 ID HNG-02362 and email adesuwahealthalive@gmail.com using Javascript for stage 2 task");
 

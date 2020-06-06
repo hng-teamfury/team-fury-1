@@ -2,7 +2,7 @@
 var myInfo = {
 	fullname: "Tochukwu Mezue",
 	ID:"HNG-03007",
-	email:"teejayezue8@gmail.com",
+	email:"teejaymezue8@gmail.com",
 	language:"JavaScript"
 }
 // displays my information

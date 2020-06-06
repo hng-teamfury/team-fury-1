@@ -1,9 +1,10 @@
-name="Francis Onwukwe"
-id = "03944"
-language = "Python"
+def hng():
+    name='Francis Onwukwe'
+    email='francisohis@gmail.com'
+    hng_id='HNG-03944'
+    language='PYTHON'
 
+    print(f"Hello World, this is {name} with HNGi7 ID {hng_id} and email {email} using {language} for stage 2 task")
 
-def script(name,id,email,language):
-    return f"Hello World, this is {name} with HNGi7 ID {id} using {language} for stage 2 task"
-  
-print(script(name,id,language))
+hng()
+
