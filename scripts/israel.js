@@ -1,11 +1,8 @@
-var text="hello world,this is ";
-var fullname="oluwafemi adeoye adeyemi ";
-var text1="with HNGi7 ID ";
-var id="HNG-04195 ";
-var text2="and email ";
-var email="adeoyefemi3@gmail.com ";
-var text3="using ";
-var language="javascript ";
-var stage="for stage 2 task";
+Let fullname="Oluwafemi Adeyemi";
+Let HNGID="HNG-04195";
+Let email="adeoyefemi3@gmail.com";
+Let language="JavaScript";
 
-console.log(text+fullname+text1+id+text2+email+text3+language+stage);
+Const pass="Hello world,this is ${fullname} with HNGi7 ID ${HNG-04195} and email ${email} using ${language} for stage 2 task";
+
+Console.log(pass); 
