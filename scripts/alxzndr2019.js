@@ -1,5 +1,5 @@
 
-const fullName  = "Ohioze Omiunu Alex";
+const fullName  = "Ohioze Omiunu";
 const id = "HNG-03837";
 const email = "ohioze.omiunu@stu.cu.edu.ng";
 const language = "Javascript";
