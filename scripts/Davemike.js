@@ -1,34 +1,21 @@
-class Name{
-	constructor(name,id,language,){
-		this.name=name;
-		this.id=id;
-		this.language=language;
-		
-	}
-	introduce(){
-		console.log(`Hello World, this ${this.name},with HNGi7 ID ${this.id} using ${this.language} for stage 2 task`);
-	}
+
+var profile = {
+    fullname: "Ekpenyong David Michael",
+
+     email: "ekpenyongdavidmichael@gmail.com",
+
+    hng_id: "HNG-01875",
+
+    language: "Javascript",
+
+   
+    
 }
-const name1= new Name('Ekpenyong David Michael','HNG-01875','Javascript');
-name1.introduce();
 
+function myprofile(){
+    var result = `Hello world, this is ${profile.fullname} with HNGi7 ID ${profile.hng_id} and email ${profile.email} using ${profile.language} for stage 2 task`;
+    return console.log(result);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+myprofile();
 

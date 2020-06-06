@@ -1,6 +1,13 @@
 <?php 
 
- echo "Hello World, this is Dayisi Iyanuoluwa Tobi with HNGi7 ID HNG-03757, using PHP for stage 2 task";
+$name = 'Dayisi Iyanu Tobi';
+$id = 'HNG-03757';
+$language = 'PHP';
+$email = 'tobiy23@gmail.com';
+
+
+
+echo  "Hello World, this is $name with HNGi7 ID $id and email $email using $language for stage 2 task";
 
 
 

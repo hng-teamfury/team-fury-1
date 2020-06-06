@@ -4,5 +4,5 @@ const id = 'HNG-00826';
 const language = 'JavaScript';
 const email = 'aadamu0298@gmail.com';
 
-const myString = `Hello World, this is Adamu Abubakar, with HNGi7 ID-00826 and email-aadamu0298@gmail.com, using javascript for stage 2 task`;
+const myString = `Hello World, this is ${name} with HNGi7 ID ${id} and email ${email} using ${language} for stage 2 task`;
 console.log(myString);
