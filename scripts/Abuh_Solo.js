@@ -1,6 +1,6 @@
 function internShip() {
   let FullName = "Habu Suleiman";
-  let ID = "HNG-05884 ";
+  let ID = "HNG-05884";
   let Email = "abuhsolo05@gmail.com";
   let Language = "Javascript";
   console.log(
