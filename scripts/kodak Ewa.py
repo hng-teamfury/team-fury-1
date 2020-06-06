@@ -1,5 +1,5 @@
-name="Popoola Ewaade"
+fullname="Popoola Ewaade"
 id="HNG-02660"
-email="popoolaaishat41@gmail.com"
-language="python"
-print("Hello World, this is "+name+" with HNGi7 ID "+id+" and email "+email+ " using "+language+" for stage 2 task")
+Email="popoolaaishat41@gmail.com"
+Language="python"
+print("Hello World, this is "+fullname+" with HNGi7 ID "+id+" and email "+Email+ " using "+Language+" for stage 2 task")
