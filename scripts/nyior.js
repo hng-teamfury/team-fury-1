@@ -1,6 +1,6 @@
 // user data
 
-const data = {
+var data = {
     name: "Nyior Clement",
     hngi_id: "HNG-05586",
     language: "Javascript",
@@ -12,7 +12,7 @@ const data = {
 
 function printUserData() {
 
-	return `Hello World, this is ${data.name} with HNGi7 ID  ${data.hngi_id} and email ${ data.email } using ${data.language} for stage 2 task`;
+	return `Hello World, this is ${data.name} with HNGi7 ID ${data.hngi_id} and email ${data.email} using ${data.language} for stage 2 task`;
 	
 }
 
