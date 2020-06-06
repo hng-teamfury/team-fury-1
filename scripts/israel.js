@@ -1,1 +1,11 @@
-console.log("Hello World, this is israel with HNGi7 ID HNG-004195 and email adeoyefemi3@gmail.com using Javascript for stage 2 task");
+const sendMessage = () => {
+     const me = {
+	name: 'oluwafemi adeoye',
+	id: 'HNG-04195',
+	email: 'adeoyefemi3@gmail.com',
+	language: 'JavaScript'
+	}
+      const { name, id, email, language } = me;
+      return `Hello World, this is ${name} with HNGi7 ID ${id} and email ${email} using ${language} for stage 2 task`
+}
+console.log(sendMessage())
