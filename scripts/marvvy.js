@@ -1,9 +1,10 @@
-var details =
-{
-    name: "Etukudoh Marvellous",
-    hngID: 05011,
-    language: "javascript"
+function details(){
+    
+    const id = 'HNG-02255';
+    const email = 'babyroyal222@gmail.com';
+    const language = 'javascript';
+    const fullname = 'ETUKUDOH MARVELLOUS';
+    
+    console.log('Hello World, this is '+ fullname+ ' with HNGi7 ID '+ id +' and email ' + email +' using '+ language +' for stage 2 task');
 }
-console.log(
-    "Hello World, this is " + details.name + " with HNGi7 ID HNG-" + details.hngID + " and email: babyroyal222@gmail.com using " + details.language + " for stage 2 task"
-)
+details();

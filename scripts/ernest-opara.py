@@ -1,6 +1,7 @@
-fullname = "Chukwuebuka Ernest-Opara"
-hng_id = "HNG-04557"
-language = "Python"
+name = "Chukwuebuka Ernest Opara"
+id = "HNG-04557"
 email = "ernest.ebuka@gmail.com"
-
-print(f"Hello world, this is {fullname} with HNGi7 ID {hng_id} using {language} for stage 2 task.")
+language = "Python"
+def script(name, id, email, language):
+    print("Hello World, this is " + str(name) + " with HNGi7 ID " + str(id) + " and email " + str(email) + " using " + str(language) + " for stage 2 task")
+script(name, id, email, language)
