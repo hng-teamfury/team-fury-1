@@ -1,7 +1,7 @@
 const tolu = {
     name: "Tolu Philip",
     email: "toluphilip619@gmail.com",
-    hngi7_ID: "HNG-04825",
+    HNGi7_ID: "HNG-04825",
     language: "javascript",
     stage: 2
 }
