@@ -2,7 +2,7 @@ const muse = {
     hngId:'HNG-02155',
     name: 'Oluwasegun Akinnage',
     language: 'JavaScript',
-    email: 'theakinnagbe@gmail.com'
+    email: 'olysegs@gmail.com'
 }
 
 const me =(person)=>{
