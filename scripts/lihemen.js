@@ -3,7 +3,7 @@ const lihemen = {
 	lastname: 'Lan',
 	id: 'HNG-03786',
 	email: 'lihemen@gmail.com',
-	stack: 'javascript'
+	stack: 'javascript',
 };
 
 console.log(
@@ -13,3 +13,5 @@ console.log(
 		lihemen.email
 	} using ${lihemen.stack.toUpperCase()} for stage 2 task`
 );
+
+

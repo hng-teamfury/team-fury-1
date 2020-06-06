@@ -1,21 +1,21 @@
 // user data
 
-const userData = {
-    internName: "Nyior Clement",
-    internId: "HNG-05586",
-    programmingLanguage: "Javascript",
-    iternEmail: "cnyior27@gmail.com",
+var data = {
+    name: "Nyior Clement",
+    hngi_id: "HNG-05586",
+    language: "Javascript",
+    email: "cnyior27@gmail.com",
 }
 
 
 //function that returns the required text output
 
-function printUserData(name, id, language) {
+function printUserData() {
 
-	return `Hello World, this is ${name} with HNGi7 ID  ${id} using ${language} for stage 2`
+	return `Hello World, this is ${data.name} with HNGi7 ID ${data.hngi_id} and email ${data.email} using ${data.language} for stage 2 task`;
 	
 }
 
-console.log(printUserData(userData.internName, userData.internId, userData.programmingLanguage, ))
+console.log(printUserData());
 
 
