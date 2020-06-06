@@ -1,16 +1,8 @@
-
-const details = {
-    name: "Adesuwa Adolosa",
-    id: "HNG-02362",
-    language: "JavaScript",
-    email: "adesuwahealthalive@gmail.com"
-};
-
-const response = `Hello world, tihs is ${details.name} with HNGi7 ID ${details.id} and email ${details.email} using ${details.language} for stage 2 task`;
+var fullname = "Adesuwa Adolosa";
+ var ID = "HNG-02362";
+ var language = "JavaScript";
+ var email = "adesuwahealthalive@gmail.com";
 
 
-function output(){
-    console.log(response);
-}
-output();
-
+var obj =  console.log(" Hello World, this is " + fullname + " with HNGi7 ID " + ID + " using " + language + " for stage 2 task.");
+var myJson = JSON.stringify(obj);
