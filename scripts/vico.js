@@ -6,4 +6,4 @@ var language;
 	 id = "HNG-00852";
 	 email = "vomoniyi2001@gmail.com";
 	 language = "JavaScript";	 
-console.log("Hello World, this is " + name + " with HNGi7 ID " + id + " with email " + email + " using " + language + " for stage 2 task");
+console.log("Hello World, this is " + name + " with HNGi7 ID " + id + " and email " + email + " using " + language + " for stage 2 task");
