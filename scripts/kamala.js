@@ -6,7 +6,7 @@ function tudent() {
     language :"Javascript",
     email: "frankkamala@gamil.com"
   }
-  return `Hello World, this is ${bio.fName} ${bio.sName} with HNGi7 ID ${bio.id} using ${bio.language} email: ${bio.email}`;
+  return `Hello World, this is ${bio.fName} ${bio.sName} with HNGi7 ID ${bio.id} using ${bio.language} for stage 2 task email${bio.email}`;
 }
 
 tudent();
