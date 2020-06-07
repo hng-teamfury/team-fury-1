@@ -1,5 +1,6 @@
-const Name = "Attah Kelechi Nathan"
-    const HNGi7ID = "HNG-00363"
-    const Language = "Javascript"
-    const Email = "Kelechinathan04@gmail.com"
-    console.log(`Hello World, this is ${Name} with HNGi7 ID ${HNGi7ID} and email ${Email} using ${Language} for stage 2 task`)
+ let fullname = "Kelechi Attah";
+        let language = "Javascript";
+        let id = "HNG-00363";
+        let email = "kelechinathan04@gmail.com";
+        
+        console.log("Hello World, this is" + " " + fullname + " " + "with HNGi7 ID" + " " + id + " and email " + email + " " + "using" + " " + language + " " + "for stage 2 task ")
