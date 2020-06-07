@@ -1,7 +1,7 @@
-function myDetails(name, id ,email,language, stage) {
-   return `Hello World, this is ${name} with HNGi7 ID ${id} and email ${email} using ${language} for stage ${stage} task`
- };
- myDetails('Edidiong Ekpo', 'HNG-02187','eddymav247@gmail.com', 'javaScript', '1');
+const name = 'Edidiong Ekpo';
+const id = 'HNG-02187';
+const language = 'JavaScript';
+const email = 'eddymav247@gmail.com';
 
-
- console.log(myDetails('Edidiong Ekpo', 'HNG-02187','eddymav247@gmail.com', 'javaScript', '1'));
+const mydetailString = `Hello World, this is ${name} with HNGi7 ID ${id} and email ${email} using ${language} for stage 2 task`;
+console.log(mydetailString);
