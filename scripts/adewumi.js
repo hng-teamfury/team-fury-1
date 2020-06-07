@@ -1,4 +1,4 @@
-let fullname = "Adelain Adewumi";
+let fullname = "Adelakin Adewumi";
         let language = "Javascript";
         let id = "HNG-04266";
         let email = "adelakinadewumi@gmail.com";
