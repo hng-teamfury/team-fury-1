@@ -5,4 +5,4 @@ let Email = "adesopeabdulhakeem1@gmail.com";
 
 
 
-console.log("Hello World, this is " + name + " with HNGi7 ID " + HNGid +  " using " + Langauage + " for stage 2 task");
+console.log("Hello World, this is " + name + " with HNGi7 ID " + HNGid + " and email " + Email +  " using " + Langauage + " for stage 2 task");
