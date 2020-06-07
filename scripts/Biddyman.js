@@ -1,0 +1,10 @@
+var text1 = "Hello world, this is";
+var fullname = "Olanrewaju Soyombo";
+var text2 = "with HNDi7 ID";
+var id = "HNG-01711";
+var text3 = "and email";
+var email = "olanrewaju.soyombo@gmail.com";
+var text4 = "using";
+var language = "Javascrpt";
+var text5 = "for stage 2 task";
+console.log(text1, fullname, text2, id, text3, email, text4, language, text5);
