@@ -1,12 +1,6 @@
-let name = 'Ovobite Precious';
-let id = 'HNG-02361';
-let email = 'preciousovobite@gmail.com';
-let language = 'Javascript';
+var fullname = "Ovobite Precious";
+var ID = "HNG-02361";
+var scripty = "Javascript";
+var email = "preciousovobite@gmail.com";
 
-let output = "Hello World, this is " + name + " with HNGi7 " + id + " and email " + email + " using " + language + " for stage 2 task";
-
-function displayOutput() {
-    return output;
-}
-
-displayOutput();
+console.log("Hello World, this is " + fullname + " with HNGi7 ID " + ID + " and email " + email + " using " + scripty + " for stage 2 task");
