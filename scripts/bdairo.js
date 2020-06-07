@@ -1,3 +1,6 @@
-let name= "Boluwarin Dairo";
-let id = "INTERNSHIP ID: HNG-01402"
-console.log(" Hello World, This is " + name + " with " + id +" using javascript for stage 2 task" );
+var name = "Boluwarin Dairo";
+var email = "dairobolu@gmail.com";
+var ID = "HNG-01402";
+var language = "JavaScript";
+
+console.log( "Hello world, " + "this is " + name + " with HNGi7 ID " + ID + " and email " + email + " using " + language  + " for stage 2 task";);
