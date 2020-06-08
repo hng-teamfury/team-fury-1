@@ -1,6 +1,6 @@
 fullname = "Kizito Bernard"
 iD = "HNG-02348"
-email = "kizitobernard@gmail"
+email = "kizitobernard@gmail.com"
 language = "python"
 
 def inter_intro(fullname, iD, email, language):
